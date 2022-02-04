@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="20302">
+   <InverseDynamicsTool name="TD3_SCALED">
+      <results_directory> </results_directory>
+      <model_file>TD3_SCALED.osim</model_file>
+      <time_range>0.005 4.355</time_range>
+      <forces_to_exclude>Muscles</forces_to_exclude>
+      <external_loads_file>C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\Data\pws01_tracked_grf.xml</external_loads_file>
+      <coordinates_file>C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\Data\pws01_tracked_ik.mot</coordinates_file>
+      <lowpass_cutoff_frequency_for_coordinates>25</lowpass_cutoff_frequency_for_coordinates>
+      <output_gen_force_file>pws01_tracked_ik_id.sto</output_gen_force_file>
+   </InverseDynamicsTool>
+</OpenSimDocument>

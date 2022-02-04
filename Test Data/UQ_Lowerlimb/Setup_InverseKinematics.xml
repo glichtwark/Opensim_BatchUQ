@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="20302">
+   <InverseKinematicsTool name="TD3_SCALED">
+      <results_directory>./</results_directory>
+      <input_directory>C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\Data</input_directory>
+      <model_file>TD3_SCALED.osim</model_file>
+      <constraint_weight>infinity</constraint_weight>
+      <accuracy>2e-05</accuracy>
+      <IKTaskSet file="C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\UQ_Lowerlimb_IK_Tasks.xml"/>
+      <marker_file>C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\Data\pws01_tracked.trc</marker_file>
+      <coordinate_file>Unassigned</coordinate_file>
+      <time_range>0.005 4.355</time_range>
+      <report_errors>true</report_errors>
+      <report_marker_locations>true</report_marker_locations>
+      <output_motion_file>C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\Data\pws01_tracked_ik.mot</output_motion_file>
+   </InverseKinematicsTool>
+</OpenSimDocument>

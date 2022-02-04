@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="20302">
+   <ScaleTool name="TD3">
+      <GenericModelMaker name="">
+         <model_file>C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\UQ_Lowerlimb.osim</model_file>
+      </GenericModelMaker>
+      <mass>40.695</mass>
+      <height>1.8</height>
+      <ModelScaler name="">
+         <apply>true</apply>
+         <scaling_order>measurements</scaling_order>
+         <MeasurementSet>
+            <objects>
+			<Measurement name="pelvis_w">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LASI RASI </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="pelvis">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="pelvis_d">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RASI RPSI </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LASI LPSI </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="pelvis">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="pelvis_h">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LASI LGT </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RASI RGT </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="pelvis">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="femur_r">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RGT RLKN </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RASI RMKN </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="femur_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X Y Z </axes>
+						</BodyScale>
+						<BodyScale name="patella_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X Y Z </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="tibia_r">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RLKN RLMAL </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RMKN RMMAL </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="tibia_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X Y Z </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="foot_r_h">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RLMAL RHEEL </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RMMAL RHEEL </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="talus_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+						<BodyScale name="calcn_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+						<BodyScale name="midfoot_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+						<BodyScale name="forefoot_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+						<BodyScale name="toes_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="foot_r_w">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RMET5 RMET1 </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="talus_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+						<BodyScale name="calcn_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+						<BodyScale name="midfoot_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+						<BodyScale name="forefoot_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+						<BodyScale name="toes_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="foot_r_d">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RHEEL RMET1 </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> RHEEL RMET5 </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="talus_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+						<BodyScale name="calcn_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+						<BodyScale name="midfoot_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+						<BodyScale name="forefoot_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+						<BodyScale name="toes_r">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="femur_l">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LGT LLKN </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LASI LMKN </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="femur_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X Y Z </axes>
+						</BodyScale>
+						<BodyScale name="patella_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X Y Z </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="tibia_l">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LLKN LLMAL </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LMKN LMMAL </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="tibia_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X Y Z </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="foot_l_h">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LLMAL LHEEL </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LMMAL LHEEL </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="talus_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+						<BodyScale name="calcn_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+						<BodyScale name="midfoot_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+						<BodyScale name="forefoot_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+						<BodyScale name="toes_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Y </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="foot_l_w">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LMET5 LMET1 </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="talus_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+						<BodyScale name="calcn_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+						<BodyScale name="midfoot_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+						<BodyScale name="forefoot_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+						<BodyScale name="toes_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> Z </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+			<Measurement name="foot_l_d">
+				<!--Flag to turn on and off scaling for this measurement.-->
+				<apply> true </apply>
+				<!--Set of marker pairs used to determine the scale factors.-->
+				<MarkerPairSet name="">
+					<objects>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LHEEL LMET1 </markers>
+						</MarkerPair>
+						<MarkerPair name="">
+							<!--Names of two markers, the distance between which is used to compute a
+							    body scale factor.-->
+							<markers> LHEEL LMET5 </markers>
+						</MarkerPair>
+					</objects>
+					<groups/>
+				</MarkerPairSet>
+				<!--Set of bodies to be scaled by this measurement.-->
+				<BodyScaleSet name="">
+					<objects>
+						<BodyScale name="talus_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+						<BodyScale name="calcn_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+						<BodyScale name="midfoot_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+						<BodyScale name="forefoot_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+						<BodyScale name="toes_l">
+							<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales
+							    along all three axes, and 'Y' scales just along the Y axis.-->
+							<axes> X </axes>
+						</BodyScale>
+					</objects>
+					<groups/>
+				</BodyScaleSet>
+			</Measurement>
+            </objects>
+            <groups/>
+         </MeasurementSet>
+         <ScaleSet>
+            <objects/>
+            <groups/>
+         </ScaleSet>
+		 <marker_file>C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\Data\static.trc</marker_file>
+         <time_range>0.005 0.2</time_range>
+         <preserve_mass_distribution>true</preserve_mass_distribution>
+         <output_scale_file>TD3_ScaleSet_Applied.xml</output_scale_file>
+      </ModelScaler>
+      <MarkerPlacer name="">
+         <IKTaskSet>
+            <objects>
+               <IKMarkerTask name="LASI">
+				<!--Whether or not this task will be used during inverse kinematics solve.-->
+				<apply> true </apply>
+				<!--Weight given to a marker or coordinate for solving inverse kinematics
+				    problems.-->
+				<weight>      10.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RASI">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>      10.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LPSI">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       5.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RPSI">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       5.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LTHI1">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LTHI2">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LTHI3">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LLKN">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>     1.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LMKN">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>     0.50000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LSHA1">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LSHA2">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LSHA3">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LLMAL">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       2.00000000 </weight>
+				</IKMarkerTask>	
+				<IKMarkerTask name="LMMAL">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       2.00000000 </weight>
+				</IKMarkerTask>				
+				<IKMarkerTask name="LHEEL">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>      5.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LMET1">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>      2.0000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="LMET5">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>      2.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RTHI1">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RTHI2">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RTHI3">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RLKN">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>     1.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RMKN">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>     0.50000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RSHA1">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RSHA2">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RSHA3">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> false </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       0.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RLMAL">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       2.00000000 </weight>
+				</IKMarkerTask>	
+				<IKMarkerTask name="RMMAL">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>       2.00000000 </weight>
+				</IKMarkerTask>				
+				<IKMarkerTask name="RHEEL">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>      5.00000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RMET1">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>      2.0000000 </weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="RMET5">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply> true </apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics
+						problems.-->
+					<weight>      2.00000000 </weight>
+				</IKMarkerTask>
+            </objects>
+            <groups/>
+         </IKTaskSet>
+         <marker_file>C:\Users\s4284085\Documents\OpenSim\UQ_Lowerlimb\Data\static.trc</marker_file>
+         <time_range>0.005 0.2</time_range>
+         <output_model_file>TD3_SCALED.osim</output_model_file>
+         <output_motion_file>TD3_static_output.mot</output_motion_file>
+		 <output_marker_file>TD3_static_output.xml</output_marker_file>
+         <max_marker_movement>-1</max_marker_movement>
+      </MarkerPlacer>
+   </ScaleTool>
+</OpenSimDocument>
