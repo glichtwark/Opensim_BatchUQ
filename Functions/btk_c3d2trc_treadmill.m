@@ -38,7 +38,7 @@ if nargin > 0
             fname = [name ext];
         end
         % load the c3dfile
-        [data] = btk_loadc3d([pname, fname], 10);
+        [data] = btk_loadc3d_app([pname, fname], 10);
         
     else
         data = varargin{1};
@@ -60,7 +60,7 @@ if nargin > 0
 else
     [fname, pname] = uigetfile('*.c3d', 'Select C3D file');
     % load the c3dfile
-    [data] = btk_loadc3d([pname, fname], 10);
+    [data] = btk_loadc3d_app([pname, fname], 10);
 end
 
 %% define order parameters
@@ -115,16 +115,23 @@ data.FilterFreq = 25;
 data = btk_filtint( data ,data.FilterFreq , 0.25);
 
 %% calculate the angle of the treadmill - assume it was calibrated flat
-treadmill_angle = angle2Points(data.marker_data.Markers.Origin(:,[1 3]),data.marker_data.Markers.X2(:,[1 3]));
+treadmill_angle = mean(unwrap(angle2Points(data.marker_data.Markers.Origin(:,[1 3]),data.marker_data.Markers.X2(:,[1 3]))));
+% also calculate X and Z translation of origin due to treadmill rotation
+x_trans = mean(data.marker_data.Markers.Origin(:,1));
+z_trans = mean(data.marker_data.Markers.Origin(:,3));
 
-%% rotate the forces by this angle (X and Z)
-% this is being done prior to changing the force plate coordinate system
-% for matlab
+%% translate (COP only) and rotate the forces due to treadmill incline
+% and the change in angle due to incline - only 2D on X Z forces
+% NOTE: this is being done prior to changing the force plate coordinate system
+% for Opensim
 
 for i = 1:length(data.fp_data.GRF_data)
-    [data.fp_data.GRF_data.P(:,1), data.fp_data.GRF_data.P(:,3)] = rotate_forces(data.fp_data.GRF_data.P(:,1), data.fp_data.GRF_data.P(:,3), treadmill_angle);
-    [data.fp_data.GRF_data.F(:,1), data.fp_data.GRF_data.F(:,3)] = rotate_forces(data.fp_data.GRF_data.F(:,1), data.fp_data.GRF_data.F(:,3), treadmill_angle);
+    data.fp_data.GRF_data(i).P(:,1) = data.fp_data.GRF_data(i).P(:,1) + x_trans;
+    data.fp_data.GRF_data(i).P(:,3) = data.fp_data.GRF_data(i).P(:,3) + z_trans;
+    [data.fp_data.GRF_data(i).P(:,1), data.fp_data.GRF_data(i).P(:,3)] = rotate_forces(data.fp_data.GRF_data(i).P(:,1), data.fp_data.GRF_data(i).P(:,3), treadmill_angle);
+    [data.fp_data.GRF_data(i).F(:,1), data.fp_data.GRF_data(i).F(:,3)] = rotate_forces(data.fp_data.GRF_data(i).F(:,1), data.fp_data.GRF_data(i).F(:,3), treadmill_angle);
 end
+
 
 %% reorder the lab coordinate system to match that of the OpenSim
 % system --> SKIP THIS STEP IF LAB COORDINATE SYSTEM IS SAME AS MODEL
@@ -160,7 +167,7 @@ end
 %%
 % determine force assignment 
 if isfield(data,'fp_data')
-    data = assign_forces(data,{'RHEEL','LHEEL'},{'calcn_r','calcn_l'},[30 0.3],data.FilterFreq);
+    data = assign_forces(data,{'RHEEL','LHEEL'},{'calcn_r','calcn_l'},[40 0.35],data.FilterFreq);
 end
 
 %% reorder axis system of mocap data
