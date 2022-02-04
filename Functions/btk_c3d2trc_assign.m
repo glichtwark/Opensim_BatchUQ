@@ -38,7 +38,7 @@ if nargin > 0
             fname = [name ext];
         end
         % load the c3dfile
-        [data] = btk_loadc3d([pname, fname], 10);
+        [data] = btk_loadc3d_app([pname, fname], 10);
         
     else
         data = varargin{1};
@@ -60,7 +60,7 @@ if nargin > 0
 else
     [fname, pname] = uigetfile('*.c3d', 'Select C3D file');
     % load the c3dfile
-    [data] = btk_loadc3d([pname, fname], 10);
+    [data] = btk_loadc3d_app([pname, fname], 10);
 end
 
 %% define order parameters
