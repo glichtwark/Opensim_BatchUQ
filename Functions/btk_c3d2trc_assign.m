@@ -38,7 +38,7 @@ if nargin > 0
             fname = [name ext];
         end
         % load the c3dfile
-        [data] = btk_loadc3d_app([pname, fname], 10);
+        [data] = btk_loadc3d([pname, fname], 10);
         
     else
         data = varargin{1};
@@ -60,7 +60,7 @@ if nargin > 0
 else
     [fname, pname] = uigetfile('*.c3d', 'Select C3D file');
     % load the c3dfile
-    [data] = btk_loadc3d_app([pname, fname], 10);
+    [data] = btk_loadc3d([pname, fname], 10);
 end
 
 %% define order parameters
@@ -113,7 +113,6 @@ data.FilterFreq = 25;
 % and the maximum time that is used for spline interpolation of markers
 % when marker data is missing (rather than setting to zero)
 data = btk_filtint( data ,data.FilterFreq , 0.25);
-
 
 %% reorder the lab coordinate system to match that of the OpenSim
 % system --> SKIP THIS STEP IF LAB COORDINATE SYSTEM IS SAME AS MODEL
