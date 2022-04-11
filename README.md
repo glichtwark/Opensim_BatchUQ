@@ -7,6 +7,8 @@ Also requires the BTK toolbox to be installed in order to open C3D file - https:
 
 Designed to work with complete workflow, ranging from loading C3D data (custom processing scripts can be used for specialist tasks), undertaking scaling of model based on static trial, conducting inverse kinematics to fit motion to marker data, combining with force plate data to run inverse dynamics and running secondary analyses (muscle and body analyses currently supported). To run processes, a sample setup (XML) file needs to be provided. See example data. 
 
+All processed data saved to a single MAT file with a data structure that can be explored with post-processing. 
+
 Contributors: 
 Patricio Pincheira Miranda
 Luke Jessup
