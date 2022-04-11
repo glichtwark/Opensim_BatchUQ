@@ -1,0 +1,115 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1254141894" file="C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim_BatchUQ\opensim_batch_uq_v0_5.prj" location="C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim_BatchUQ" name="opensim_batch_uq_v0_5" target="target.mlapps" target-name="Package App">
+    <param.appname>opensim_batch_uq_v0_5</param.appname>
+    <param.authnamewatermark>Glen Lichtwark</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>Applicaiton to process C3D data through Opensim pipeline</param.summary>
+    <param.description>Contributions from Patricio Pincheira Miranda, Luke Jessup, Yung Sheng Su</param.description>
+    <param.screenshot>C:\Users\uqglicht_local\AppData\Local\Temp\tpcb8ea910_0804_469d_98f7_1c6c233710db.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms>
+      <item>win64</item>
+    </param.platforms>
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>ca61bd2b-5b96-4b0f-b71a-9cc38e9067ca</param.guid>
+    <unset>
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\opensim_batch_uq_v0_5.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetAnalogFrameNumber.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetAnalogs.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetFirstFrame.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetForcePlatforms.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetGroundReactionWrenches.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetLastFrame.m</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetMarkers.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetMetaData.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetPointFrameNumber.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkGetScalars.mexw64</file>
+      <file>C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim\MatlabOpensimPipelineTools\BTK\share\btk-0.1\Wrapping\Matlab\btk\btkReadAcquisition.mexw64</file>
+      <file>${PROJECT_ROOT}\Functions\btk_c3d2trc_app.m</file>
+      <file>${PROJECT_ROOT}\Functions\btk_loadc3d_app.m</file>
+      <file>${PROJECT_ROOT}\Functions\load_sto_file.m</file>
+      <file>${PROJECT_ROOT}\Functions\readtext.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB" name="Opensim_BatchUQ" optional="false">C:\Users\uqglicht_local\Dropbox (UQ)\MATLAB\Opensim_BatchUQ</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2021a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
