@@ -10,12 +10,10 @@ Designed to work with complete workflow, ranging from loading C3D data (custom p
 All processed data saved to a single MAT file with a data structure that can be explored with post-processing. 
 
 Contributors: 
+
 Patricio Pincheira Miranda
-
 Luke Jessup
-
 Yungsheng (Eric) Su
-
 Glen Lichtwark
 
 
