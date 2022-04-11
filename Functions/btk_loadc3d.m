@@ -1,6 +1,6 @@
-function data = btk_loadc3d_app(file, grw_threshold)
+function data = btk_loadc3d(file, grw_threshold)
 
-% function data = btk_loadc3d_app(file, threshold)
+% function data = btk_loadc3d(file)
 %
 % Function to load the data from a c3d file into the structured array data.
 % The file may be excluded if you wish to choose it from a windows dialog
@@ -63,7 +63,7 @@ if nargin < 1
 end
 
 if nargin < 2
-    grw_threshold = 10;
+    grw_threshold = 5;
 end
 
 % if file is c3d then load using the BTK matlab wrapper
@@ -78,6 +78,20 @@ marker_data.Last_Frame = btkGetLastFrame(acq);
 % get marker data
 [markers, markersInfo] = btkGetMarkers(acq);
 marker_data.Markers = markers;
+
+% convert data to millimeters if in meters - catch if units have been screwed with
+fnames = fieldnames(markers);
+if mean(markers.(fnames{1})(:,1))<2 && mean(markers.(fnames{1})(:,2))<2 && mean(markers.(fnames{1})(:,3))<2
+   m_mm = 1;
+else m_mm = 0;
+end
+
+if strcmp(markersInfo.units.ALLMARKERS,'m') || m_mm == 1  
+    for i = 1:length(fnames)
+        marker_data.Markers.(fnames{i}) = marker_data.Markers.(fnames{i}) * 1000;
+    end
+    markersInfo.units.ALLMARKERS = 'mm';
+end
 
 % add the marker data information to the structure
 marker_data.Info = markersInfo;
