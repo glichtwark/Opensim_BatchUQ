@@ -11,9 +11,13 @@ All processed data saved to a single MAT file with a data structure that can be 
 
 Contributors: 
 Patricio Pincheira Miranda
+
 Luke Jessup
+
 Yungsheng (Eric) Su
+
 Glen Lichtwark
+
 
 Special thanks to the Opensim development team.
 
