@@ -20,6 +20,6 @@ Yungsheng (Eric) Su
 Glen Lichtwark
 
 
-Special thanks to the Opensim development team.
+Special thanks to the Opensim development team - https://opensim.stanford.edu/
 
 ![image](https://user-images.githubusercontent.com/8924887/162679601-522d7f17-d1ee-40fb-bc70-e481162517d3.png)
